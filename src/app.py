@@ -99,7 +99,7 @@ def appium_run(avd_name: str):
 
     :param avd_name: Name of android virtual device / emulator
     """
-    cmd = 'appium'
+    cmd = 'appium --session-override'
 
     default_web_browser = os.getenv('BROWSER')
     if default_web_browser == 'chrome':
